@@ -1,11 +1,148 @@
+@import 'variables';
+
 // bower:scss
 // endbower
 
-
-
+/*//////////////////////////////////////////////////////////
+//////////////////////////////////////////// DEFAULT CLASSES
+//////////////////////////////////////////////////////////*/
 .browsehappy {
     margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
+    background: $colorLightGray;
+    color: $colorBlack;
     padding: 0.2em 0;
+}
+
+/*//////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////// TAGS
+//////////////////////////////////////////////////////////*/
+body {
+    background: $colorOffWhite;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: $colorMidnightGray;
+    margin: 0;
+}
+
+/*//////////////////////////////////////////////////////////
+///////////////////////////////////////////////// CONTAINERS
+//////////////////////////////////////////////////////////*/
+#header {
+    background-color: $colorDeepGray;
+    height: 60px;
+    border-bottom: 2px solid $colorDarkGray;
+    text-align: center;
+}
+
+#versus {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bolder;
+    color: $colorOffWhite;
+    position: relative;
+    line-height: 60px;
+}
+
+#attack-button {
+    margin: 0 auto;
+    background-color: $colorButtonRed;
+    font-style: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    top: 415px;
+    border: 2px solid $colorMediumGray;
+    text-shadow: 0px -1px 0px $colorDarkGray;
+    display: block;
+    line-height: 130px;
+    position: relative;
+    text-align: center;
+    color: $colorWhite;
+    width: 250px;
+    height: 150px;
+    box-shadow: inset   2px -9px 0px rgb(130, 130, 147),
+                        3px 2px   1px rgb(111, 111, 126);
+
+    &:hover {
+        margin-top: 8px;
+        margin-bottom: -8px;
+        box-shadow: inset   0px -9px 0px rgb(130, 130, 147),
+                            3px 2px  1px rgb(111, 111, 126);
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+    }
+
+    &:active {
+        margin-top: 26px;
+        margin-bottom: -26px;
+        box-shadow: inset   0px -4px 0px rgb(130, 130, 147),
+                            2px 2px  1px rgb(111, 111, 126);
+    }
+}
+
+/*//////////////////////////////////////////////////////////
+/////////////////////////////////////////////////// FIGHTERS
+//////////////////////////////////////////////////////////*/
+#fighter {
+    background-color: $colorWhite;
+    border: 1px solid orange;
+    width: 300px;
+    height: 300px;
+    left: 60px;
+    top: 100px;
+    position: absolute;
+}
+
+#fighter-damage {
+    background-color: red;
+    border: 2px solid $colorDarkGray;
+    width: 500px;
+    height: 40px;
+    left: 18px;
+    top: 8px;
+    position: absolute;
+}
+
+#figher-health {
+    background-color: $colorFullHealthGreen;
+    width: 500px;
+    height: 40px;
+    left: 20px;
+    top: 10px;
+    position: absolute;
+}
+
+/*//////////////////////////////////////////////////////////
+//////////////////////////////////////////////////// ENEMIES
+//////////////////////////////////////////////////////////*/
+#enemy {
+    background-color: $colorWhite;
+    border: 1px solid red;
+    width: 300px;
+    height: 300px;
+    right: 60px;
+    top: 100px;
+    position: absolute;
+}
+
+#enemy-damage {
+    background-color: red;
+    border: 2px solid $colorDarkGray;
+    width: 500px;
+    height: 40px;
+    right: 18px;
+    top: 8px;
+    position: absolute;
+    float: right;
+}
+
+#enemy-health {
+    background-color: $colorFullHealthGreen;
+    width: 500px;
+    height: 40px;
+    top: 10px;
+    right: 20px;
+    position: absolute;
+    float: right;
+
 }
