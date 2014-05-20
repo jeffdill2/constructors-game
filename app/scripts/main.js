@@ -19,6 +19,12 @@ function Eric() {
 	this.name = 'Eric Dodds';
 }
 
+function John() {
+	this.power = 1;
+	this.image = 'john.png';
+	this.name = 'John Saddington';
+}
+
 /*//////////////////////////////////////////////////////////
 //////////////////////////////////////////////////// ENEMIES
 //////////////////////////////////////////////////////////*/
@@ -176,8 +182,8 @@ $('#fight-button').click(function() {
 /*//////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////// FIGHT 
 //////////////////////////////////////////////////////////*/
-while (strFighterNumber < 1 || strFighterNumber > 3) {
-	strFighterNumber = prompt("Choose your fighter:\n\n- Mason\t--\tenter 1\n- Joe\t\t--\tenter 2\n- Eric\t--\tenter 3");
+while (strFighterNumber < 1 || strFighterNumber > 4) {
+	strFighterNumber = prompt("Choose your fighter:\n\n- Mason\t--\tenter 1\n- Joe\t\t--\tenter 2\n- Eric\t--\tenter 3\n- John\t--\tenter 4");
 }
 
 switch (strFighterNumber) {
@@ -191,6 +197,10 @@ switch (strFighterNumber) {
 
 	case "3":
 		objFighter = new Eric();
+		break;
+
+	case "4":
+		objFighter = new John();
 		break;
 
 	default:
