@@ -3,19 +3,19 @@
 //////////////////////////////////////////////////////////*/
 function Mason() {
 	this.power = 4;
-	this.image = 'mason.jpg';
+	this.image = 'mason.png';
 	this.name = 'Mason Stewart';
 }
 
 function Joe() {
 	this.power = 3;
-	this.image = 'joe.jpg';
+	this.image = 'joe.png';
 	this.name = 'Joe Tamburro';
 }
 
 function Eric() {
 	this.power = 2;
-	this.image = 'eric.jpg';
+	this.image = 'eric.png';
 	this.name = 'Eric Dodds';
 }
 
@@ -24,28 +24,28 @@ function Eric() {
 //////////////////////////////////////////////////////////*/
 function ArnoldSchwarzenegger() {
 	this.power = 1;
-	this.image = 'arnold.jpg';
+	this.image = 'arnold.png';
 	this.name = 'Arnold Schwarzenegger';
 	this.defeated = false;
 }
 
 function JeanClaudeVanDamme() {
 	this.power = 1.5;
-	this.image = 'jean-claude.jpg';
+	this.image = 'jean-claude.png';
 	this.name = 'Jean Claude Van Damme';
 	this.defeated = false;
 }
 
 function JackieChan() {
 	this.power = 2;
-	this.image = 'jackie.jpg';
+	this.image = 'jackie.png';
 	this.name = 'Jackie Chan';
 	this.defeated = false;
 }
 
 function ChuckNorris() {
 	this.power = 100;
-	this.image = 'chuck.jpg';
+	this.image = 'chuck.png';
 	this.name = 'Chuck Norris';
 	this.defeated = false;
 }
