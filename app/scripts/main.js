@@ -85,7 +85,7 @@ function chooseEnemy() {
 
 function setEnemy(objEnemy) {
 	$('#enemy').empty();
-	$('#enemy').prepend('<img src="../images/' + objEnemy.image + '">');
+	$('#enemy').prepend('<img src="images/' + objEnemy.image + '">');
 	$('#enemy-name').text(objEnemy.name);
 	$('#enemy-health').width(500);
 	$('#fighter-health').width(500);
@@ -93,7 +93,7 @@ function setEnemy(objEnemy) {
 }
 
 function setFighter(objFighter) {
-	$('#fighter').prepend('<img src="../images/' + objFighter.image + '">');
+	$('#fighter').prepend('<img src="images/' + objFighter.image + '">');
 	$('#fighter-name').text(objFighter.name);
 }
 
